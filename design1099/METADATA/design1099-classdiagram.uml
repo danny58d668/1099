@@ -1,0 +1,25 @@
+@startuml
+title design1099
+class kalah.Kalah
+interface kalah.backend.Game
+class kalah.backend.GameManager
+class kalah.backend.House
+class kalah.backend.Pit
+class kalah.backend.Store
+interface kalah.frontend.Display
+class kalah.frontend.DisplayManager
+
+kalah.backend.GameManager --|>kalah.backend.Game
+kalah.backend.GameManager -->kalah.backend.House
+kalah.backend.GameManager -->kalah.backend.Store
+kalah.backend.GameManager -->kalah.backend.Pit
+kalah.backend.Store --|>kalah.backend.Pit
+kalah.backend.House --|>kalah.backend.Pit
+kalah.Kalah -->kalah.backend.GameManager
+kalah.Kalah -->kalah.backend.Game
+kalah.Kalah -->kalah.frontend.Display
+kalah.Kalah -->kalah.frontend.DisplayManager
+kalah.frontend.DisplayManager -->kalah.backend.GameManager
+kalah.frontend.DisplayManager -->kalah.backend.Game
+kalah.frontend.DisplayManager --|>kalah.frontend.Display
+@enduml

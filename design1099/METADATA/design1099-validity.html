@@ -1,0 +1,1142 @@
+<html>
+<head>
+<style>
+  .stripe tbody tr:nth-child(even) td {background-color:#f2f2f2;}
+  div.scrollable { width: 100%; max-height: 100px; margin: 0; padding: 0; overflow: auto;}
+</style>
+</head>
+</html>
+<body>
+<h1>Coupling Validity Study</h1>
+<p>Measurements for the metrics used in the Coupling Validity Study: Paul Ralph and Ewan Tempero Construct Validity in Software Engineering Research and Software Metrics 22nd International Conference on Evaluation and Assessment in Software Engineering (EASE) 2018. https://doi.org/10.1145/3210459.3210461</p>
+<h3>Dataset attributes</h3>
+<table style="empty-cells: show" border>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+Timestamp
+</div></th>
+    <td><div class="scrollable">
+Sat Jan 15 09:01:26 NZDT 2022
+</div></td>
+  </tr>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+Tool
+</div></th>
+    <td><div class="scrollable">
+mete-analysis(coupling validity):20200425
+</div></td>
+  </tr>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+System
+</div></th>
+    <td><div class="scrollable">
+design1099
+</div></td>
+  </tr>
+  <tr valign=top>
+    <th style="text-align:left"><div class="scrollable">
+Codebase
+</div></th>
+    <td><div class="scrollable">
+../grad009-01/design1099/design1099
+</div></td>
+  </tr>
+</table>
+<h3>Measurements</h3>
+<h4>Metadata<h4>
+<table style="empty-cells: show" border>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+Kind
+</div></td>
+    <td><div class="scrollable">
+Nominal
+</div></td>
+    <td><div class="scrollable">
+What 'kind' of module (Class, Interface, Enum, Annotation, Exception)
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-out (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-in (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanin) Record only dependencies from target to source (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-bidir (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (bidir) Dependencies are recorded as bi-directional. If A has a dependency to B, then B has a dependency to A; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+FAN-out-occr (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (occr) Record each occurrence of a dependency separately; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+CBO (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (bidir) Dependencies are recorded as bi-directional. If A has a dependency to B, then B has a dependency to A; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+CBO-out (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (trgtsttic) Record dependencies to both instance and static fields and methods in the target module; (srccons) Consider constructors as invokers as creating coupling; (trgtcons) Record both invoking methods and calling construtors as creating dependencies; (type) Record dependencies between all types, including interfaces, enums, an annotations; (anc) Include dependencies to ancestors of source; (desc) Include descendants to ancestors of source; (inh) Include dependencies on targets whose accessed members were inherited; (nopoly) Do not record dependencies on targets whose members were accessed via polymorphism; (unidir) Dependencies are recorded as uni-directional, only from source to target.; (fanout) Record only dependencies from source to target (no-op when bidir); (mod) Record dependencies between modules (as opposed to between packages); (pres) Record only the presence (or not) of an occurrence of a dependency between entities; (atom) Consider only top-level types as atomic (nested types are not separate); (raw) Do not record dependencies due to synthetic constructs
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+MPC (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen; (pres) Record only the presence (or not) of an occurrence of a dependency between entities
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+ICP (Coupling)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtdcl) Only record dependencies to target modules whose declarations have been seen
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM1 (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM1-inst (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcinst) Only record dependencies with respect to instance fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM2 (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM2-inst (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcinst) Only record dependencies with respect to instance fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+LCOM4 (Cohesion)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(Can't provide easy evidence for number of connected components) (srcinst) Only record dependencies with respect to instance fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+NumMeth (Size)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (srccons) Consider constructors as invokers as creating coupling; (init) Record all dependencies including those in all initialisers; (raw) Do not record dependencies due to synthetic constructs; (srcmem) Include dependencies to members of all visibilities in source
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td colspan="16"><div class="scrollable">
+NumFlds(Size)
+</div></td>
+    <td><div class="scrollable">
+UnboundedCount
+</div></td>
+    <td><div class="scrollable">
+(trgtall) Record dependencies to target modules whether or not the declarations have been seen; (srcsttc) Record dependencies with respect to both instance and static fields and methods in the source module; (type) Record dependencies between all types, including interfaces, enums, an annotations; (occr) Record each occurrence of a dependency separately; (prim) Include dependencies to primitive types; (same) Include dependencies to the same type
+</div></td>
+  </tr>
+</table>
+<h4>Data<h4>
+<div class="stripe">
+<table style="empty-cells: show" border>
+  <tr valign=top>
+    <th><div class="scrollable">
+Entity
+</div></th>
+    <th><div class="scrollable">
+Kind
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-out (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-in (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-bidir (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+FAN-out-occr (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+CBO (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+CBO-out (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+MPC (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+ICP (Coupling)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM1 (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM1-inst (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM2 (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM2-inst (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+LCOM4 (Cohesion)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+NumMeth (Size)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+    <th><div class="scrollable">
+NumFlds(Size)
+</div></th>
+    <th><div class="scrollable">
+Evidence
+</div></th>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.Kalah
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Game, kalah.frontend.Display, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Game, kalah.frontend.Display, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+22
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract boolean getLastSeedStatus() <>:[26], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerValidMove(int) <>:[7], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintBoardState() <>:[3], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintBoardState() <>:[11], Local:kalah.frontend.Display:[1], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintQuit() <>:[19], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintBoardState() <>:[20], kalah.Kalah#public <init>() {}>kalah.backend.GameManager#public <init>() {}:[2], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int[] getInit() <>:[9], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintTryAgain() <>:[29], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintScore() <>:[14], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract void CleanBoard() <>:[13], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerTurn() <>:[23], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract void playerTurn() <>:[28], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerTurn() <>:[6], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract int PrintMove(int) <>:[18], kalah.Kalah#private final kalah.backend.Game board, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerTurn() <>:[17], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintWinner() <>:[15], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract boolean move(int,int) <>:[24], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public <init>(com.qualitascorpus.testsupport.IO,kalah.backend.Game) {}:[2], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintQuit() <>:[10]]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Game, kalah.frontend.Display, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Game, kalah.frontend.Display, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+28
+</div></td>
+    <td><div class="scrollable">
+[play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public boolean move(int,int) {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.Display#public abstract void PrintQuit() <>, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public void PrintQuit() {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public <init>(com.qualitascorpus.testsupport.IO,kalah.backend.Game) {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public int getPlayerTurn() {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public void playerTurn() {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract int getPlayerTurn() <>, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public void PrintScore() {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public void CleanBoard() {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract int[] getInit() <>, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.Display#public abstract void PrintTryAgain() <>, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract void playerTurn() <>, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract void CleanBoard() <>, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.Display#public abstract void PrintWinner() <>, play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public int[] getInit() {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public void PrintBoardState() {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract boolean getLastSeedStatus() <>, play(com.qualitascorpus.testsupport.IO)>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public void PrintTryAgain() {}, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract boolean move(int,int) <>, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public void PrintWinner() {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.Display#public abstract void PrintBoardState() <>, <init>()>kalah.backend.GameManager#public <init>() {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.DisplayManager#public int PrintMove(int) {}, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.Display#public abstract int PrintMove(int) <>, play(com.qualitascorpus.testsupport.IO)>kalah.frontend.Display#public abstract void PrintScore() <>, play(com.qualitascorpus.testsupport.IO)>kalah.backend.Game#public abstract int getPlayerValidMove(int) <>]
+</div></td>
+    <td><div class="scrollable">
+44
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public int getPlayerTurn() {}:[6], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract boolean getLastSeedStatus() <>:[26], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintBoardState() {}:[11], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerValidMove(int) <>:[7], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintBoardState() <>:[3], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract boolean move(int,int) <>:[24][1]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintQuit() <>:[19], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintBoardState() <>:[11], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public void playerTurn() {}:[28], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintTryAgain() <>:[29], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public boolean move(int,int) {}:[24][0]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public void CleanBoard() {}:[13], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public int[] getInit() {}:[9], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintTryAgain() {}:[29], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintQuit() {}:[19], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract void CleanBoard() <>:[13], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract void playerTurn() <>:[28], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public int getPlayerTurn() {}:[23], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerTurn() <>:[6], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract boolean move(int,int) <>:[24][0]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract int PrintMove(int) <>:[18][0]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract boolean move(int,int) <>:[24], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public boolean getLastSeedStatus() {}:[26], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintBoardState() {}:[20], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public boolean move(int,int) {}:[24], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintBoardState() <>:[20], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintScore() {}:[14], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public int PrintMove(int) {}:[18][0]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public int getPlayerTurn() {}:[17], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int[] getInit() <>:[9], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public int getPlayerValidMove(int) {}:[7][0]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintScore() <>:[14], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintBoardState() {}:[3], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerTurn() <>:[23], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract int PrintMove(int) <>:[18], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerTurn() <>:[17], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintWinner() <>:[15], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintQuit() {}:[10], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.Game#public abstract int getPlayerValidMove(int) <>:[7][0]int, kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.Display#public abstract void PrintQuit() <>:[10], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public void PrintWinner() {}:[15], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.frontend.DisplayManager#public int PrintMove(int) {}:[18], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public int getPlayerValidMove(int) {}:[7], kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}>kalah.backend.GameManager#public boolean move(int,int) {}:[24][1]int]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public static void main(java.lang.String[]) {}>>>kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[value0]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.Kalah#public static void main(java.lang.String[]) {}, kalah.Kalah#public <init>() {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.Kalah#public void play(com.qualitascorpus.testsupport.IO) {}]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah#private final kalah.backend.Game board]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.backend.Game
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.Kalah, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.Kalah, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+10
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game#public abstract int getPlayerValidMove(int) <>, kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>, kalah.backend.Game#public abstract boolean move(int,int) <>, kalah.backend.Game#public abstract boolean getLastSeedStatus() <>, kalah.backend.Game#public abstract int getPlayerTurn() <>, kalah.backend.Game#public abstract void CleanBoard() <>, kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>, kalah.backend.Game#public abstract int getWinner() <>, kalah.backend.Game#public abstract int[] getInit() <>, kalah.backend.Game#public abstract void playerTurn() <>]
+</div></td>
+    <td><div class="scrollable">
+10
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.backend.Game#public abstract int getWinner() <>, Return:kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>, Return:kalah.backend.Game#public abstract int getPlayerTurn() <>, Return:kalah.backend.Game#public abstract void playerTurn() <>, Return:kalah.backend.Game#public abstract int[] getInit() <>, Return:kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>, Return:kalah.backend.Game#public abstract void CleanBoard() <>, Return:kalah.backend.Game#public abstract boolean getLastSeedStatus() <>, Return:kalah.backend.Game#public abstract int getPlayerValidMove(int) <>, Return:kalah.backend.Game#public abstract boolean move(int,int) <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.backend.GameManager
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game, kalah.backend.House, kalah.backend.Store, kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+5
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game, kalah.backend.House, kalah.backend.Store, kalah.backend.Pit, kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+23
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[4], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[6], kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void removeHouseValue() {}:[7], kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[8], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[9], kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[6], kalah.backend.GameManager#private void InitSeedsandHouses() {}>kalah.backend.Store#public <init>(int,int) {}:[4], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public void addHouseValue(int) {}:[8], kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void removeHouseValue() {}:[9], kalah.backend.GameManager#private boolean verifyValidInput(int) {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#private final kalah.backend.Pit[] board, kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void removeHouseValue() {}:[4], kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[5], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[13], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public void addHouseValue(int) {}:[4], kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public int getHouseValue() {}:[3], kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#private void InitSeedsandHouses() {}>kalah.backend.House#public <init>(int,int) {}:[2], kalah.backend.GameManager#private final kalah.backend.Pit[] storeBoard, kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public int getHouseValue() {}:[7], Implements:kalah.backend.GameManager>kalah.backend.Game]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.House, kalah.backend.Store, kalah.backend.Pit, kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.House, kalah.backend.Store, kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+12
+</div></td>
+    <td><div class="scrollable">
+[getSeedsInHousesAmount(int)>kalah.backend.Pit#public int getHouseValue() {}, verifyValidInput(int)>kalah.backend.Pit#public int getHouseValue() {}, CleanBoard()>kalah.backend.Pit#public int getHouseValue() {}, getSeedsInStoresAmount(int)>kalah.backend.Pit#public int getHouseValue() {}, getWinner()>kalah.backend.Pit#public int getHouseValue() {}, move(int,int)>kalah.backend.Pit#public void removeHouseValue() {}, CaptureHouse(int,int,int)>kalah.backend.Pit#public void addHouseValue(int) {}, InitSeedsandHouses()>kalah.backend.House#public <init>(int,int) {}, InitSeedsandHouses()>kalah.backend.Store#public <init>(int,int) {}, move(int,int)>kalah.backend.Pit#public void addHouseValue(int) {}, CaptureHouse(int,int,int)>kalah.backend.Pit#public void removeHouseValue() {}, CleanBoard()>kalah.backend.Pit#public void addHouseValue(int) {}]
+</div></td>
+    <td><div class="scrollable">
+24
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[4], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[6], kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void removeHouseValue() {}:[7], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[6][0]int, kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[8], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[9], kalah.backend.GameManager#public int getWinner() {}>kalah.backend.Pit#public int getHouseValue() {}:[6], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public void addHouseValue(int) {}:[8], kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void removeHouseValue() {}:[9], kalah.backend.GameManager#private boolean verifyValidInput(int) {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void removeHouseValue() {}:[4], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public void addHouseValue(int) {}:[4][0]int, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[5], kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[5][0]int, kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[13], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public void addHouseValue(int) {}:[4], kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public int getHouseValue() {}:[3], kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}>kalah.backend.Pit#public int getHouseValue() {}:[2], kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[9][0]int, kalah.backend.GameManager#public boolean move(int,int) {}>kalah.backend.Pit#public void addHouseValue(int) {}:[13][0]int, kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public int getHouseValue() {}:[7], kalah.backend.GameManager#public void CleanBoard() {}>kalah.backend.Pit#public void addHouseValue(int) {}:[8][0]int]
+</div></td>
+    <td><div class="scrollable">
+52
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int[] getInit() {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public void CleanBoard() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, kalah.backend.GameManager#public int[] getInit() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#public int getWinner() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public int getWinner() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}]
+</div></td>
+    <td><div class="scrollable">
+52
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int[] getInit() {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public void CleanBoard() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, kalah.backend.GameManager#public int[] getInit() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#public int getWinner() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#private boolean verifyValidInput(int) {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public int getWinner() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public void CleanBoard() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public int getPlayerValidMove(int) {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public int getPlayerValidMove(int) {}>>>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public boolean getLastSeedStatus() {}>>>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#public int getPlayerTurn() {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public int getWinner() {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public void playerTurn() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}>>>kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#public boolean move(int,int) {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}>>>kalah.backend.GameManager#public boolean getLastSeedStatus() {}, kalah.backend.GameManager#private void InitSeedsandHouses() {}>>>kalah.backend.GameManager#public int getPlayerTurn() {}]
+</div></td>
+    <td><div class="scrollable">
+26
+</div></td>
+    <td><div class="scrollable">
+[value6, value5, value8, value7, value2, value1, value4, value3, value9, value19, value18, value15, value14, value17, value16, value11, value10, value13, value12, value20, value25, value0, value22, value21, value24, value23]
+</div></td>
+    <td><div class="scrollable">
+26
+</div></td>
+    <td><div class="scrollable">
+[value6, value5, value8, value7, value2, value1, value4, value3, value9, value19, value18, value15, value14, value17, value16, value11, value10, value13, value12, value20, value25, value0, value22, value21, value24, value23]
+</div></td>
+    <td><div class="scrollable">
+9
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager#public int[] getInit() {}, kalah.backend.GameManager#private final int InitialAmountInHouses, kalah.backend.GameManager#private final int InitialHouses, kalah.backend.GameManager#public boolean move(int,int) {}, kalah.backend.GameManager#private final int PlaceAmount, kalah.backend.GameManager#private final int NumberOfPlayers, kalah.backend.GameManager#private final int InitialAmountInStores, kalah.backend.GameManager#private int PlayerStart, kalah.backend.GameManager#private final int InitialStoresPerPlayer]
+</div></td>
+    <td><div class="scrollable">
+14
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.backend.GameManager#private boolean verifyValidInput(int) {}, Return:kalah.backend.GameManager#public int getPlayerTurn() {}, kalah.backend.GameManager#public <init>() {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.backend.GameManager#public int getPlayerValidMove(int) {}, Return:kalah.backend.GameManager#private void InitSeedsandHouses() {}, Return:kalah.backend.GameManager#public void playerTurn() {}, Return:kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, Return:kalah.backend.GameManager#public int[] getInit() {}, Return:kalah.backend.GameManager#public void CleanBoard() {}, Return:kalah.backend.GameManager#private void CaptureHouse(int,int,int) {}, Return:kalah.backend.GameManager#public boolean getLastSeedStatus() {}, Return:kalah.backend.GameManager#public int getWinner() {}, Return:kalah.backend.GameManager#public boolean move(int,int) {}, Return:kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}]
+</div></td>
+    <td><div class="scrollable">
+11
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager#private final int InitialAmountInHouses, kalah.backend.GameManager#private final int InitialHouses, kalah.backend.GameManager#private final int PlaceAmount, kalah.backend.GameManager#private final int NumberOfPlayers, kalah.backend.GameManager#private boolean LastSeedSown, kalah.backend.GameManager#private final kalah.backend.Pit[] storeBoard, kalah.backend.GameManager#private final int InitialAmountInStores, kalah.backend.GameManager#private int PlayerStart, kalah.backend.GameManager#private int PlayerTurn, kalah.backend.GameManager#private final kalah.backend.Pit[] board, kalah.backend.GameManager#private final int InitialStoresPerPlayer]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.backend.House
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[Extends:kalah.backend.House>kalah.backend.Pit, kalah.backend.House#public <init>(int,int) {}>kalah.backend.Pit#public <init>(int,int) {}:[1]]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[<init>(int,int)>kalah.backend.Pit#public <init>(int,int) {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.House#public <init>(int,int) {}>kalah.backend.Pit#public <init>(int,int) {}:[1]]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.backend.Pit
+</div></td>
+    <td><div class="scrollable">
+Abstract
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Store, kalah.backend.House]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Store, kalah.backend.House]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Store, kalah.backend.House]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Pit#protected int player, kalah.backend.Pit#public int getHouseValue() {}]
+</div></td>
+    <td><div class="scrollable">
+4
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.backend.Pit#public int getHouseValue() {}, Return:kalah.backend.Pit#public void removeHouseValue() {}, kalah.backend.Pit#public <init>(int,int) {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.backend.Pit#public void addHouseValue(int) {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Pit#protected int player, kalah.backend.Pit#protected int houseValue]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.backend.Store
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Store#public <init>(int,int) {}>kalah.backend.Pit#public <init>(int,int) {}:[1], Extends:kalah.backend.Store>kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.GameManager, kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Pit]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[<init>(int,int)>kalah.backend.Pit#public <init>(int,int) {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Store#public <init>(int,int) {}>kalah.backend.Pit#public <init>(int,int) {}:[1]]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.frontend.Display
+</div></td>
+    <td><div class="scrollable">
+Interface
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah, kalah.frontend.DisplayManager]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+6
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.Display#public abstract void PrintBoardState() <>, kalah.frontend.Display#public abstract int PrintMove(int) <>, kalah.frontend.Display#public abstract void PrintQuit() <>, kalah.frontend.Display#public abstract void PrintScore() <>, kalah.frontend.Display#public abstract void PrintWinner() <>, kalah.frontend.Display#public abstract void PrintTryAgain() <>]
+</div></td>
+    <td><div class="scrollable">
+6
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.frontend.Display#public abstract int PrintMove(int) <>, Return:kalah.frontend.Display#public abstract void PrintWinner() <>, Return:kalah.frontend.Display#public abstract void PrintTryAgain() <>, Return:kalah.frontend.Display#public abstract void PrintScore() <>, Return:kalah.frontend.Display#public abstract void PrintBoardState() <>, Return:kalah.frontend.Display#public abstract void PrintQuit() <>]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+  </tr>
+  <tr valign=top>
+    <td><div class="scrollable">
+kalah.frontend.DisplayManager
+</div></td>
+    <td><div class="scrollable">
+Class
+</div></td>
+    <td><div class="scrollable">
+(not needed)
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game, kalah.frontend.Display]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+3
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game, kalah.frontend.Display, kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+18
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[54], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[20], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[12], kalah.frontend.DisplayManager#public void PrintWinner() {}>kalah.backend.Game#public abstract int getWinner() <>:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int[] getInit() <>:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[60], kalah.frontend.DisplayManager#public void PrintWinner() {}>kalah.backend.Game#public abstract int getWinner() <>:[7], kalah.frontend.DisplayManager#private void PrintEnclosure(int) {}>kalah.backend.Game#public abstract int[] getInit() <>:[2], Parameter:kalah.frontend.DisplayManager#public <init>(com.qualitascorpus.testsupport.IO,kalah.backend.Game) {}>kalah.backend.Game:[1], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[13], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[68], kalah.frontend.DisplayManager#private final kalah.backend.Game board, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[34], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[26], kalah.frontend.DisplayManager#public int PrintMove(int) {}>kalah.backend.Game#public abstract int[] getInit() <>:[2], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[5], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[46], Implements:kalah.frontend.DisplayManager>kalah.frontend.Display]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game, kalah.Kalah]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.backend.Game]
+</div></td>
+    <td><div class="scrollable">
+14
+</div></td>
+    <td><div class="scrollable">
+[PrintPlayerHouses(int)>kalah.backend.GameManager#public int[] getInit() {}, PrintScore()>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, PrintMove(int)>kalah.backend.GameManager#public int[] getInit() {}, PrintPlayerHouses(int)>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>, PrintPlayerHouses(int)>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}, PrintMove(int)>kalah.backend.Game#public abstract int[] getInit() <>, PrintPlayerHouses(int)>kalah.backend.Game#public abstract int[] getInit() <>, PrintWinner()>kalah.backend.GameManager#public int getWinner() {}, PrintEnclosure(int)>kalah.backend.Game#public abstract int[] getInit() <>, PrintPlayerHouses(int)>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>, PrintEnclosure(int)>kalah.backend.GameManager#public int[] getInit() {}, PrintScore()>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>, PrintPlayerHouses(int)>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}, PrintWinner()>kalah.backend.Game#public abstract int getWinner() <>]
+</div></td>
+    <td><div class="scrollable">
+50
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[5][0]int, kalah.frontend.DisplayManager#public void PrintWinner() {}>kalah.backend.Game#public abstract int getWinner() <>:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[60], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[54][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[68], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[60], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[68][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[68], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[5], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[54][0]int, kalah.frontend.DisplayManager#private void PrintEnclosure(int) {}>kalah.backend.GameManager#public int[] getInit() {}:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int[] getInit() {}:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[54], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[26][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[60][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[12][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[26][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[26], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[12][0]int, kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[13][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[54], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[46], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[68][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[60][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int[] getInit() <>:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[46][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[46][0]int, kalah.frontend.DisplayManager#private void PrintEnclosure(int) {}>kalah.backend.Game#public abstract int[] getInit() <>:[2], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[13], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[34], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[34], kalah.frontend.DisplayManager#public int PrintMove(int) {}>kalah.backend.Game#public abstract int[] getInit() <>:[2], kalah.frontend.DisplayManager#public void PrintWinner() {}>kalah.backend.GameManager#public int getWinner() {}:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[26], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[46], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[34][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[20], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[12], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[34][0]int, kalah.frontend.DisplayManager#public void PrintWinner() {}>kalah.backend.Game#public abstract int getWinner() <>:[7], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[5][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[20][0]int, kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[13], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.GameManager#public int getSeedsInStoresAmount(int) {}:[5], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.Game#public abstract int getSeedsInHousesAmount(int) <>:[20][0]int, kalah.frontend.DisplayManager#public int PrintMove(int) {}>kalah.backend.GameManager#public int[] getInit() {}:[2], kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[12], kalah.frontend.DisplayManager#public void PrintScore() {}>kalah.backend.Game#public abstract int getSeedsInStoresAmount(int) <>:[13][0]int, kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}>kalah.backend.GameManager#public int getSeedsInHousesAmount(int) {}:[20], kalah.frontend.DisplayManager#public void PrintWinner() {}>kalah.backend.GameManager#public int getWinner() {}:[7]]
+</div></td>
+    <td><div class="scrollable">
+7
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintTryAgain() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}, kalah.frontend.DisplayManager#private void PrintEnclosure(int) {}>>>kalah.frontend.DisplayManager#public void PrintBoardState() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintScore() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintQuit() {}, kalah.frontend.DisplayManager#public int PrintMove(int) {}>>>kalah.frontend.DisplayManager#public void PrintBoardState() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintWinner() {}]
+</div></td>
+    <td><div class="scrollable">
+7
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintTryAgain() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}, kalah.frontend.DisplayManager#private void PrintEnclosure(int) {}>>>kalah.frontend.DisplayManager#public void PrintBoardState() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintScore() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintQuit() {}, kalah.frontend.DisplayManager#public int PrintMove(int) {}>>>kalah.frontend.DisplayManager#public void PrintBoardState() {}, kalah.frontend.DisplayManager#public void PrintBoardState() {}>>>kalah.frontend.DisplayManager#public void PrintWinner() {}]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+0
+</div></td>
+    <td><div class="scrollable">
+[]
+</div></td>
+    <td><div class="scrollable">
+1
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.DisplayManager#public void PrintBoardState() {}]
+</div></td>
+    <td><div class="scrollable">
+9
+</div></td>
+    <td><div class="scrollable">
+[Return:kalah.frontend.DisplayManager#private void PrintEnclosure(int) {}, Return:kalah.frontend.DisplayManager#public void PrintQuit() {}, Return:kalah.frontend.DisplayManager#public void PrintBoardState() {}, kalah.frontend.DisplayManager#public <init>(com.qualitascorpus.testsupport.IO,kalah.backend.Game) {}>java.lang.Object#public <init>() <>*:[1], Return:kalah.frontend.DisplayManager#public void PrintWinner() {}, Return:kalah.frontend.DisplayManager#public void PrintPlayerHouses(int) {}, Return:kalah.frontend.DisplayManager#public void PrintTryAgain() {}, Return:kalah.frontend.DisplayManager#public void PrintScore() {}, Return:kalah.frontend.DisplayManager#public int PrintMove(int) {}]
+</div></td>
+    <td><div class="scrollable">
+2
+</div></td>
+    <td><div class="scrollable">
+[kalah.frontend.DisplayManager#private final com.qualitascorpus.testsupport.IO io, kalah.frontend.DisplayManager#private final kalah.backend.Game board]
+</div></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

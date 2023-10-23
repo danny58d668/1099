@@ -1,0 +1,1 @@
+design1099	kalah.backend.GameManager(19),kalah.backend.House(228),kalah.backend.Store(38),kalah.frontend.DisplayManager(19)	4	304

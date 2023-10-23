@@ -1,0 +1,36 @@
+#TITLE	OO Measurements
+#SUMMARY	Description of static structure of system. Includes measurements of individual modules and measurements of the overall design.
+
+##Dataset attributes
+Timestamp	Sat Jan 15 08:59:50 NZDT 2022
+Tool	mete-analysis(static structure):20211117T0000
+System	design1099
+Codebase	../grad009-01/design1099/design1099
+
+##Module Attributes
+#Entity	Ce	Ca	CON	DIF	DIM	DSF	DSM	DSFF	MIF	MIM	MSF	MSM	MAIN	CLS	INT	ENM	ANN	EXP	NST	EXT	IMP	MDUInh	MInhF	CeR	CaR
+kalah.Kalah	4	0	1	1	1	0	0	0	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0.500	0.000
+kalah.backend.Game	0	3	0	0	10	0	0	0	0	10	0	0	0	0	1	0	0	0	0	0	0	0	1	0.000	0.375
+kalah.backend.GameManager	4	2	1	11	13	0	0	0	11	13	0	0	0	1	0	0	0	0	0	0	1	1	0	0.500	0.250
+kalah.backend.House	1	1	1	0	0	0	0	0	2	3	0	0	0	1	0	0	0	0	0	1	0	1	0	0.125	0.125
+kalah.backend.Pit	0	3	1	2	3	0	0	0	2	3	0	0	0	1	0	0	0	0	0	0	0	0	1	0.000	0.375
+kalah.backend.Store	1	1	1	0	0	0	0	0	2	3	0	0	0	1	0	0	0	0	0	1	0	1	0	0.125	0.125
+kalah.frontend.Display	0	2	0	0	6	0	0	0	0	6	0	0	0	0	1	0	0	0	0	0	0	0	1	0.000	0.250
+kalah.frontend.DisplayManager	3	1	1	1	8	0	0	0	1	8	0	0	0	1	0	0	0	0	0	0	1	1	0	0.375	0.125
+
+##Design Attributes
+design1099	
+Total_Modules	8
+#CLS	6
+#INT	2
+#ENM	0
+#ANN	0
+#EXP	0
+#NST	0
+#MAIN	1
+DUI	0.500
+IF	0.375
+#IND	3
+#NDP	1
+NoInstanceMethods	0
+NoInstanceFields	0
